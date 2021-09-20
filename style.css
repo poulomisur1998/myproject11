@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #question {
+    color: white;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+  }
+  
+  body.correct {
+    background-color: green;
+  }
+  
+  body.wrong {
+    background-color: #ff2c2c;
+  }
+  
+  .container {
+    position: absolute;
+    width: 800px;
+    background: linear-gradient(to left, #f32078, #5931c7);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px 2px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    border: #ffffffb3 solid 1.3px;
+    outline: none;
+    background-color: rgb(255, 255, 255, 0.2);
+  }
+  
+  .btn:hover {
+    color: white;
+    border-color: black;
+    transform: translateZ(20px);
+  }
+  
+  .btn.correct {
+    background-color: green;
+    color: white;
+  }
+  
+  .btn.wrong {
+    color: white;
+    background-color: red;
+  }
+  
+  .start-btn,
+  .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  #message {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    color: white;
+    left: 100px;
+    text-align: justify;
+  }
